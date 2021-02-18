@@ -16,11 +16,15 @@ function App() {
           <Link to="/">Home</Link> 
         </li>
         <li>
+          <Link to="/"></Link>
+        </li>
+        <li>
           <Link to="/Exercise1">Exercise 1</Link>
         </li>
       </ul>
     </nav>
     <Switch>
+
       <Route path="/Exercise1" component={Exercise1} />
     </Switch>
 
