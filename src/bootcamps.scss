@@ -1,0 +1,53 @@
+
+
+$small: 4px;
+$medium:8px;
+$large:12px;
+$xl:16px;
+
+.myborder {
+    border: 1px solid grey;
+}
+
+.div1 {
+    margin:20px;
+}
+
+.div2 {
+    margin: 10%;
+    padding: 1%;
+}
+
+.div3 {
+    margin: 2vw;
+    padding: 1%;
+}
+
+.div4 {
+    margin: 1em;
+    padding: 1%;
+}
+
+.div5 {
+    margin: 1rem;
+}
+
+.dn {
+    display: none;
+}
+
+.vh {
+    visibility: hidden;
+}
+
+.mm:hover {
+    border-bottom: 10px solid yellow;
+}
+
+img {
+    opacity: .5;
+    position: absolute;
+    width: 1200px;
+    height: 1600px;
+    z-index: -1;
+}
