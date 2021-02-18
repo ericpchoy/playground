@@ -42,7 +42,7 @@ function Exercise1() {
         <br></br>
 
         <label for="myfile">Select a file:</label> <br></br>
-        <input type="file" id="myfile" name="myfile"></input> <br></br>
+        <input type="file" id="myfile" name="myfile" multiple></input> <br></br>
 
         <label for="date">Graduation Date:</label> <br></br>
         <input type="date" id="date" name="date" value="today" min= "today" max="2121-2-17"></input> <br></br>
