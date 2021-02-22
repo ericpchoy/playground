@@ -1,6 +1,8 @@
 .container {
     border: 1px solid rgb(201,201,201);
-    margin: 2px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -64,7 +66,7 @@
 @media only screen and (max-width:640px) {
     .container {
         border: 1px solid rgb(201,201,201);
-        margin: 2px;
+        margin: auto;
         overflow: hidden;
     }
     
@@ -78,23 +80,18 @@
     .content {
         background-color: #129a22;
         color: white;
-        padding: 10px;
         font-size: large;
         border: 2px solid white;
         height: 180px;
-        width: 96%;
        
     }
 
     .sidebar {
         background-color: #673ab7;
         color: white;
-        padding-left: 10px;
-        padding-right: 10px;
         font-size: large;
         border: 2px solid white;
         height: 90px;
         width: 96%;
-
     }
 }

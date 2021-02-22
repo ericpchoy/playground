@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import Exercise1 from "./Homework/Exercise1"
 import Exercise2 from "./Homework/Exercise2"
+import Exercise3 from "./Homework/Exercise3"
 
 
 
@@ -25,6 +26,9 @@ function App() {
         <li>
           <NavLink to="/Exercise2">Exercise 2</NavLink>
         </li>
+        <li>
+          <NavLink to="/Exercise3">Exercise 3</NavLink>
+        </li>
       </ul>
     </nav>
     
@@ -36,6 +40,7 @@ function App() {
 
      <Route path="/Exercise1" component={Exercise1} />
      <Route path="/Exercise2" component={Exercise2} />
+     <Route path="/Exercise3" component={Exercise3} />
 
      </Switch>
 
