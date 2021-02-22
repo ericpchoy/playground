@@ -1,53 +1,30 @@
+$fonty:“Georgia”;
+$myfont-Size:20;
+$darktheme-background-color:black;
+$darktheme-color:white;
+$lighttheme-color:black;
+$lighttheme-background-color:yellow;
 
-
-$small: 4px;
-$medium:8px;
-$large:12px;
-$xl:16px;
-
-.myborder {
-    border: 1px solid grey;
+@mixin darktheme {
+background-color: $darktheme-background-color;
+font-size: $myfont-Size;
+color: $darktheme-color;
 }
-
-.div1 {
-    margin:20px;
+@mixin lighttheme {
+background-color: $lighttheme-background-color;
+font-size: $myfont-Size;
+color: $lighttheme-color;
 }
-
-.div2 {
-    margin: 10%;
-    padding: 1%;
+.darktheme {
+@include darktheme;
+height: 300px;
+width: 300px;
 }
-
-.div3 {
-    margin: 2vw;
-    padding: 1%;
+.lighttheme {
+@include lighttheme;
+height: 300px;
+width: 300px;
 }
-
-.div4 {
-    margin: 1em;
-    padding: 1%;
-}
-
-.div5 {
-    margin: 1rem;
-}
-
-.dn {
-    display: none;
-}
-
-.vh {
-    visibility: hidden;
-}
-
-.mm:hover {
-    border-bottom: 10px solid yellow;
-}
-
-img {
-    opacity: .5;
-    position: absolute;
-    width: 1200px;
-    height: 1600px;
-    z-index: -1;
+.toolip:hover {
+color:burlywood;
 }
