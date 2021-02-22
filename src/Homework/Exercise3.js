@@ -8,12 +8,24 @@ function Exercise3() {
     return (
         <div>
 
-        <div className='darktheme'>
+        <div className={theme} id='text'>
             This is dark theme
         </div>
 
         <div>
-        <button onClick={()=>setTheme('lighttheme')}>Change to Light Theme</button>
+        <button onClick={()=>
+            {if(theme==='darktheme') {
+                setTheme('lighttheme');
+                var elem = document.getElementById('text');
+                elem.innerHTML = "This is light theme";
+            }
+            else{
+                setTheme('darktheme')
+                elem = document.getElementById('text');
+                elem.innerHTML = "This is dark theme";
+
+            }}}>
+            Change Themes</button>
         </div>
         
         </div>
