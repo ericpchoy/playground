@@ -18,7 +18,7 @@ function App() {
           <NavLink exact to="/">Home</NavLink> 
         </li>
         <li>
-         <NavLink to="/GitHub" target="_blank" rel='noopener noreferrer'>GitHub</NavLink>
+         <a href="https://github.com/ericpchoy/playground" target="_blank" rel='noopener noreferrer'>GitHub</a>
          </li>
         <li>
           <NavLink to="/Exercise1">Exercise 1</NavLink>
@@ -33,11 +33,6 @@ function App() {
     </nav>
     
     <Switch>
-      <Route path='/GitHub' component={() => { 
-      window.location.replace('https://github.com/ericpchoy/playground'); 
-      return null;
-     }}/>
-
      <Route path="/Exercise1" component={Exercise1} />
      <Route path="/Exercise2" component={Exercise2} />
      <Route path="/Exercise3" component={Exercise3} />
